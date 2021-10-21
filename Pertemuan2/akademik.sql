@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Okt 2021 pada 14.55
+-- Waktu pembuatan: 21 Okt 2021 pada 08.53
 -- Versi server: 10.4.21-MariaDB
 -- Versi PHP: 8.0.10
 
@@ -32,16 +32,21 @@ CREATE TABLE `siswa` (
   `nama` varchar(100) DEFAULT NULL,
   `gender` enum('Laki-Laki','Perempuan') DEFAULT NULL,
   `alamat` text DEFAULT NULL,
-  `tgl_lahir` date DEFAULT NULL
+  `tgl_lahir` date DEFAULT NULL,
+  `no_hp` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `siswa`
 --
 
-INSERT INTO `siswa` (`nim`, `nama`, `gender`, `alamat`, `tgl_lahir`) VALUES
-('1800018373', 'Muhammad Taufiq Insani', 'Laki-Laki', 'Ciamis', '1999-05-24'),
-('1800018374', 'Silfia Febila Ayu', 'Perempuan', 'Ciamis', '1999-05-23');
+INSERT INTO `siswa` (`nim`, `nama`, `gender`, `alamat`, `tgl_lahir`, `no_hp`) VALUES
+('1800018373', 'muhammad taufiq insani', 'Laki-Laki', 'Ciamis', '1999-05-24', '089603769511'),
+('1800018374', 'Silfia Febila Ayu', 'Perempuan', 'Ciamis', '1999-05-23', '085559355524'),
+('1800018375', 'Bayu Surya', 'Laki-Laki', 'Ciamis', '2021-10-13', '085123456'),
+('1800018376', 'Lesli Kumalasari', 'Perempuan', 'Bandung', '2021-10-01', '085987654'),
+('1800018377', 'Dewi', 'Perempuan', 'bandung', '2021-10-01', '085559355524'),
+('1800018379', 'Silfia Febila Ayu', 'Perempuan', 'Ciamis', '2021-09-29', '085559355524');
 
 --
 -- Indexes for dumped tables
