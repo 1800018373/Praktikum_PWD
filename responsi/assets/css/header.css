@@ -1,0 +1,43 @@
+.navbar-brand,
+.nav-link {
+	color: rgb(255, 255, 255) !important;
+}
+.navbar-brand {
+	font-family: Viga;
+	font-size: 20px;
+}
+.menu-bar {
+	background: rgba(0, 0, 0, 0.438);
+}
+
+@media (min-width: 1200px) {
+	.navbar {
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 1) 17%,
+			rgba(0, 0, 0, 0.24163168685442926) 100%
+		);
+	}
+	.navbar-brand,
+	.nav-link {
+		font-family: Viga;
+		color: rgb(255, 255, 255) !important;
+	}
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 20px;
+	}
+	.navbar-brand {
+		font-family: Viga;
+		font-size: 28px;
+	}
+	.nav-link:hover {
+		border-bottom: 3px solid rgb(255, 255, 255);
+		margin-bottom: -3px;
+	}
+	.login {
+		right: 30px;
+		position: absolute;
+	}
+}
